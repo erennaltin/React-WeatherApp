@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import { CityProvider } from "./contexts/CityContext";
+import { ModeProvider } from "./contexts/ModeContext";
+
+import CityContainer from "./components/CityContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CityProvider>
+      <ModeProvider>
+        <div className="App">
+          <div className="Header">
+            <h1> Patika Weather App - React Homework 2</h1>
+          </div>
+          <div className="WeatherContainer">
+            <CityContainer />
+          </div>
+        </div>
+      </ModeProvider>
+    </CityProvider>
   );
 }
 

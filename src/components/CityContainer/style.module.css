@@ -1,0 +1,33 @@
+.CityContainer {
+  width: 70%;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.WeatherContainer {
+  display: flex;
+  overflow-x: auto;
+  padding: 12px;
+}
+
+.SearchContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  overflow-y: auto;
+}
+
+.SearchContainer p {
+  padding: 8px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.SearchContainer p:hover {
+  background-color: rgba(0,0,0,0.05);
+  cursor: pointer;
+}
+
+.SearchContainer p:last-of-type {
+  border-bottom: none;
+}

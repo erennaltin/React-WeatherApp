@@ -1,0 +1,16 @@
+.Header {
+  background-color: #6e98f4;
+  padding: 8px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+input {
+  padding: 8px;
+  font-size: 1.2rem;
+  border-color: #5986e9;
+}
+
+input:focus {
+  outline: none;
+}
